@@ -6,11 +6,12 @@ const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: 26rem 1fr;
   grid-template-rows: auto 1fr;
+  height: 100vh;
   @media screen and (max-width: 768px) {
     grid-template-rows: auto auto 1fr;
     grid-template-columns: 1fr;
+    min-height: 100vh;
   }
-  height: 100vh;
 `;
 const Main = styled.main`
   background-color: var(--color-grey-50);

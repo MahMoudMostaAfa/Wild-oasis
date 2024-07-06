@@ -15,6 +15,7 @@ const NavList = styled.ul`
   gap: 0.8rem;
   @media screen and (max-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0;
   }
 `;
@@ -33,6 +34,7 @@ const StyledNavLink = styled(NavLink)`
     transition: all 0.3s;
     @media screen and (max-width: 768px) {
       padding: 1rem 2rem;
+      flex-basis: 20%;
     }
   }
 
