@@ -114,6 +114,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
+  // 1rem == 10px
   font-size: 62.5%;
 }
 
@@ -121,7 +122,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--color-grey-700);
 
-  transition: col or 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
@@ -154,10 +155,12 @@ button:focus,
 textarea:focus,
 select:focus {
   outline: 2px solid var(--color-brand-600);
-  outline-offset: -1px;
+  outline-offset: - 1px;
 }
 
-/* Parent selector, finally 😃 */
+/* Parent selector, finally 😃  */
+/* styles only if it has svg  */
+styles 
 button:has(svg) {
   line-height: 0;
 }

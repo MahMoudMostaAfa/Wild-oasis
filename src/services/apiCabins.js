@@ -1,4 +1,3 @@
-import toast from "react-hot-toast";
 import supabase, { supabaseUrl } from "./supabase";
 
 export async function getCabins() {
@@ -28,9 +27,11 @@ export async function createEditCabin(newCabin, id) {
   let query = supabase.from("cabins");
 
   // 1- craating a new cabin
-  // select().single() is used to return the data of the new cabin
   if (!id) query = query.insert([{ ...newCabin, image: imagePath }]);
+  // 2- updating a cabin
   if (id) query = query.update({ ...newCabin, image: imagePath }).eq("id", id);
+
+  // select().single() is used to return the data of the new cabin
   // singel() is used to return the data one of the updated cabin
   const { data, error } = await query.select().single();
 
@@ -45,7 +46,9 @@ export async function createEditCabin(newCabin, id) {
     );
   }
   // 2- uploading the image
+  // if the image is already uploaded
   if (hasImagepath) return data;
+
   const { error: imageError } = await supabase.storage
     .from("cabins-imgs")
     .upload(imageName, newCabin.image);

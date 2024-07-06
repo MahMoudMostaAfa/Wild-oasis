@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 import UserAvatar from "../features/authentication/UserAvatar";
+import Logo from "./Logo";
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
   padding: 1.2rem 4.8rem;
@@ -9,11 +10,24 @@ const StyledHeader = styled.header`
   gap: 1.6rem;
   align-items: center;
   justify-content: flex-end;
+  & .logo {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    & .logo {
+      display: block;
+      margin-right: auto;
+      img {
+        height: 5rem;
+      }
+    }
+  }
 `;
 
 function Header() {
   return (
     <StyledHeader>
+      <Logo />
       <UserAvatar />
       <HeaderMenu />
     </StyledHeader>

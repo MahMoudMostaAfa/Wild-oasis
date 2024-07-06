@@ -5,8 +5,11 @@ import styled from "styled-components";
 const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: 26rem 1fr;
-
   grid-template-rows: auto 1fr;
+  @media screen and (max-width: 768px) {
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+  }
   height: 100vh;
 `;
 const Main = styled.main`
@@ -18,6 +21,10 @@ const Main = styled.main`
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media screen and (max-width: 768px) {
+    grid-row: 3/-1;
+    min-height: 100vh;
   }
 `;
 const Container = styled.div`
