@@ -1,8 +1,12 @@
-# React + Vite
+# Wild-oasis
+Welcome to wild-oasa project! This is a React-based web application for a cabins mangement. The project demonstrates advanced usage of React Router, Global state management with ReactQuery, UI state with context API ,styling with Styled components and Supabase for backend service .
+# Features
+- Cabins,bookings Management: create and updating.
+- profile mangement : update info and photo.
+- Advanced Routing: Implemented using React Router for smooth navigation.
+- State Management: Efficient state management with React Query.
+- authentication and authorization.
+- dark mode 
+# live demo 
+[Wild-oasis](https://wild-oasis-mm.netlify.app)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
