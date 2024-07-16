@@ -1,5 +1,5 @@
 # Wild-oasis
-Welcome to wild-oasa project! This is a React-based web application for a cabins mangement. The project demonstrates advanced usage of React Router, Global state management with ReactQuery, UI state with context API ,styling with Styled components and Supabase for backend service .
+Welcome to wild-oasis project! This is a React-based web application for a cabins mangement. The project demonstrates advanced usage of React Router, Global state management with ReactQuery, UI state with context API ,styling with Styled components and Supabase for backend service .
 # Features
 - Cabins,bookings Management: create and updating.
 - profile mangement : update info and photo.
